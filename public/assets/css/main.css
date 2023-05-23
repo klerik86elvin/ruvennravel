@@ -1,0 +1,273 @@
+.tour-item {
+    min-height: 620px;
+}
+.transport-slider {
+    padding: 0 60px;
+}
+.transport-slider .slick-track {
+}
+.transport-slider .slick-slide {
+    position: relative;
+    align-items: center;
+    display: flex!important;
+    transform: scale(.9);
+    height: 275px;
+    transition: .8s;
+}
+.transport-slider .slick-slide img {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.slick-prev, .slick-next {
+    position: absolute;
+    overflow: hidden;
+    height: 40px;
+    width: 40px;
+    background-color: #013793!important;
+    color: #013793!important;
+    border-radius: 50%;
+    top: 50%;
+    z-index: 10;
+}
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+}
+.slick-next:after {
+    content: '';
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    left: 25%;
+    top: 17%;
+    background-image: url(/assets/img/slide-arrow.svg);
+    background-repeat: no-repeat;
+}
+.slick-prev:after {
+    content: '';
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    left: 0;
+    top: 17%;
+    background-image: url(/assets/img/slide-arrow.svg);
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+.transport-slider .slick-center {
+    transform: scale(1);
+}
+
+.hotel-slider .slick-track{
+    height: 430px;
+}
+.hotel-slider .slick-track img {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hotel-slider .slick-slide {
+    position: relative;
+    align-items: center;
+    display: flex!important;
+    margin-right: 20px;
+}
+.hotel-slider .slick-dots.numeric {
+    display: flex;
+}
+[role=presentation]:hover{
+
+    cursor:pointer;
+}
+.slick-dots.numeric {
+    justify-content: center;
+}
+.about-us-slider .slick-track img {
+    max-width: 265px;
+    object-fit: cover;
+}
+
+.about-us-slider .slick-slide {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex!important;
+    transform: scale(.9);
+    height: 210px;
+    transition: .8s;
+}
+.about-us-slider {
+    padding: 0 60px;
+}
+.about-us-slider .slick-arrow {
+    top:42%;
+}
+.about-us-slider .slick-center {
+    transform: scale(1.1);
+}
+[role=presentation].slick-active {
+    font-weight: bold;
+    /* width: 20px; */
+    text-decoration: underline;
+}
+.whatsapp-icon {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 60px;
+    z-index: 10;
+}
+.whatsapp-icon img {
+    width: 50px;
+    height: 50px;
+}
+.tour-detail-swiper {
+
+    padding: 0 60px;
+}
+.tour-detail-swiper .slick-list {
+    height: 420px!important;
+}
+.tour-detail-swiper img {
+    max-height: 420px;
+}
+.tour-detail-swiper .slick-slide {
+    height: 420px;
+}
+.tour-detail-swiper .slick-prev, .tour-detail-swiper .slick-next{
+    top: 45%;
+}
+.tour-gallery {
+    height: 260px;
+}
+#callToMe, #order {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background-color: #4a556890;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+}
+#callToMe .content {
+    width: 850px;
+}
+.custom-select {
+    position: relative;
+}
+.custom-select:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    width: 31px;
+    height: 27px;
+    background-image:  url(/assets/img/custom-select-arrow.svg);
+    background-repeat: no-repeat;
+    transform: translateY(50%)
+}
+.custom-select .custom-options{
+    display: none;
+}
+.custom-select.open .custom-options{
+    display: block;
+}
+
+.custom-options {
+    position: absolute;
+    padding: 10px 20px;
+    z-index: 10;
+    top: 50px;
+    background-color: white;
+    width: 100%;
+    color: #9ca3af;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.31);
+}
+.custom-options p {
+    cursor: pointer;
+}
+.custom-options .selected{
+    color: #1FAF38;
+    font-weight: bold;
+}
+.custom-options .selected:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 15px;
+    background-image:  url(/assets/img/select-tour.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(50%)
+}
+.custom-options p:hover {
+    color: #1FAF38;
+}
+@media (max-width: 640px) {
+    #callToMe .content {
+        width: 100%;
+    }
+    .tour-detail-swiper .slick-slide {
+        height: 145px!important;
+    }
+    .tour-detail-swiper {
+        padding: 0 40px;
+    }
+    .tour-detail-swiper .slick-list {
+        height: 145px!important;
+    }
+    .tour-detail-swiper img {
+        max-height: 145px;
+    }
+    .hotel-slider .slick-dots.numeric {
+    }
+    .hotel-slider .slick-track{
+        height: 220px!important;
+    }
+
+    .hotel-slider .items {
+        height: 220px!important;
+    }
+    .hotel-slider{
+        padding: 0 60px;
+    }
+    .main-img {
+        height: calc(852px - 16px);
+        object-fit: cover;
+    }
+    .tour-item {
+        min-height: 500px;
+    }
+    .transport-slider .slick-slide {
+        height: 170px;
+    }
+
+    .slick-prev:after, .slick-next:after {
+        width: 50%;
+        height: 50%;
+
+    }
+    .slick-prev:after {
+        left: 12%;
+        top: 8px;
+    }
+    .slick-next:after {
+        left: 38%;
+        top: 7px
+    }
+    .slick-prev, .slick-next {
+        height: 30px;
+        width: 30px;
+    }
+}
